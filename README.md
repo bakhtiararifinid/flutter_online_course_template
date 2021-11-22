@@ -1,16 +1,9 @@
-# flutter_online_course_template
+# Flutter Online Course Template
 
-A new Flutter project.
+Online course app template built with flutter.
 
-## Getting Started
+| ![](assets/screenshots/register_page.png) |
+|:---:|
 
-This project is a starting point for a Flutter application.
+This template was based on [this design](https://dribbble.com/shots/15930996-Secoola-Online-Course-Mobile-UI-Kit) by [Maulana Farhan](https://dribbble.com/maulanafaa) on [dribble](https://dribbble.com)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
