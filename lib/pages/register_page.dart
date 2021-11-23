@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_online_course_template/pages/pick_favorite_page.dart';
 import 'package:flutter_svg/svg.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -60,7 +61,7 @@ class RegisterPage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => _gotoPickFavoritePage(context),
                   child: const Text('Sign up'),
                 ),
               ),
@@ -96,6 +97,10 @@ class RegisterPage extends StatelessWidget {
       ),
     );
   }
+
+  void _gotoPickFavoritePage(BuildContext context) {
+    Navigator.of(context).pushNamed(PickFavoritePage.routeName);
+  }
 }
 
 class _CustomTextField extends StatelessWidget {
@@ -115,6 +120,8 @@ class _CustomTextField extends StatelessWidget {
     return TextField(
       obscureText: obscureText,
       decoration: InputDecoration(
+        filled: true,
+        fillColor: Colors.white,
         hintText: hint,
         prefixIcon: prefixIcon,
         focusedBorder: OutlineInputBorder(
