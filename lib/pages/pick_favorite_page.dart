@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_online_course_template/pages/home_page.dart';
 import 'package:flutter_svg/svg.dart';
 
 class PickFavoritePage extends StatelessWidget {
@@ -33,7 +34,7 @@ class PickFavoritePage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => _gotoHomePage(context),
                   child: const Text('Start your journey'),
                 ),
               ),
@@ -48,6 +49,13 @@ class PickFavoritePage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  void _gotoHomePage(BuildContext context) {
+    Navigator.of(context).pushNamedAndRemoveUntil(
+      HomePage.routeName,
+      (route) => false,
     );
   }
 }
