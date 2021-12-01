@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_online_course_template/pages/course_page.dart';
 import 'package:flutter_online_course_template/pages/home_page.dart';
 import 'package:flutter_online_course_template/pages/pick_favorite_page.dart';
 import 'package:flutter_online_course_template/pages/register_page.dart';
@@ -18,6 +19,7 @@ class App extends StatelessWidget {
         RegisterPage.routeName: (_) => const RegisterPage(),
         PickFavoritePage.routeName: (_) => const PickFavoritePage(),
         HomePage.routeName: (_) => const HomePage(),
+        CoursePage.routeName: (_) => const CoursePage(),
       },
       debugShowCheckedModeBanner: false,
     );
