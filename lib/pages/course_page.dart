@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_online_course_template/pages/checkout_success_page.dart';
 
 class CoursePage extends StatelessWidget {
   const CoursePage({Key? key}) : super(key: key);
@@ -351,12 +352,16 @@ class _Checkout extends StatelessWidget {
           SizedBox(
             width: 160,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => _gotoCheckoutSuccessPage(context),
               child: const Text('Checkout'),
             ),
           ),
         ],
       ),
     );
+  }
+
+  void _gotoCheckoutSuccessPage(BuildContext context) {
+    Navigator.of(context).pushNamed(CheckoutSuccessPage.routeName);
   }
 }
